@@ -11,7 +11,6 @@ import LogoPage from "./components/logo.js";
 import data from "./data.json";
 import { gsap } from "gsap";
 
-console.log(data);
 mapboxgl.accessToken =
   "pk.eyJ1IjoiY3RoZXJpYXVsdDk3IiwiYSI6ImNremgycWY2cjI1c2Eydmt1MHRjZDhmN24ifQ.R_TgJcYa-2HWW-Yz8ca2-g";
 
@@ -29,6 +28,8 @@ function App() {
   //artwork state variables
   let [artwork_id, setId] = useState("1");
   let [artwork_artist, setArtist] = useState("");
+  let [artwork_year, setYear] = useState("");
+  let [artwork_material, setMaterial] = useState("");
   let [artwork_title, setTitle] = useState("The Robert McLaughlin Gallery");
   let [artwork_description, setDescription] = useState(
     "The Robert McLaughlin Gallery is a public art gallery in Oshawa, Ontario, Canada. It is the largest public art gallery in the Regional Municipality of Durham, of which Oshawa is a part. The gallery houses a significant collection of Canadian contemporary and modern artwork."
@@ -74,6 +75,8 @@ function App() {
         properties: {
           title: `${data.artworks[0].name}`,
           artist: `${data.artworks[0].artist}`,
+          year: `${data.artworks[0].year}`,
+          material: `${data.artworks[0].material}`,
           description: `${data.artworks[0].description}`,
           audio: `${data.artworks[0].audioFile}`,
           caption: `${data.artworks[0].caption}`,
@@ -91,6 +94,8 @@ function App() {
         properties: {
           title: `${data.artworks[1].name}`,
           artist: `${data.artworks[1].artist}`,
+          year: `${data.artworks[1].year}`,
+          material: `${data.artworks[1].material}`,
           description: `${data.artworks[1].description}`,
           audio: `${data.artworks[1].audioFile}`,
           caption: `${data.artworks[1].caption}`,
@@ -109,6 +114,8 @@ function App() {
         properties: {
           title: `${data.artworks[2].name}`,
           artist: `${data.artworks[2].artist}`,
+          year: `${data.artworks[2].year}`,
+          material: `${data.artworks[2].material}`,
           description: `${data.artworks[2].description}`,
           audio: `${data.artworks[2].audioFile}`,
           caption: `${data.artworks[2].caption}`,
@@ -126,6 +133,8 @@ function App() {
         properties: {
           title: `${data.artworks[3].name}`,
           artist: `${data.artworks[3].artist}`,
+          year: `${data.artworks[3].year}`,
+          material: `${data.artworks[3].material}`,
           description: `${data.artworks[3].description}`,
           audio: `${data.artworks[3].audioFile}`,
           caption: `${data.artworks[3].caption}`,
@@ -144,6 +153,8 @@ function App() {
         properties: {
           title: `${data.artworks[4].name}`,
           artist: `${data.artworks[4].artist}`,
+          year: `${data.artworks[4].year}`,
+          material: `${data.artworks[4].material}`,
           description: `${data.artworks[4].description}`,
           audio: `${data.artworks[4].audioFile}`,
           caption: `${data.artworks[4].caption}`,
@@ -279,6 +290,8 @@ function App() {
       el.onclick = () => {
         setArtist(
           (artwork_artist = feature.properties.artist),
+          setYear((artwork_year = feature.properties.year)),
+          setMaterial((artwork_material = feature.properties.material)),
           setTitle(
             (artwork_title = feature.properties.title),
             setDescription(
@@ -425,6 +438,8 @@ function App() {
         //set data for the pull-up menu
         setArtist(
           (artwork_artist = feature.properties.artist),
+          setYear((artwork_year = feature.properties.year)),
+          setMaterial((artwork_material = feature.properties.material)),
           setTitle(
             (artwork_title = feature.properties.title),
             setDescription(
@@ -585,12 +600,7 @@ function App() {
   // determine whether audio controls should be displayed
   function handleControlsDisplay() {
     // check if artist field is empty
-    if (artwork_artist === "") {
-      // remove controls for that artwork
-      document.querySelector(".name-artist").style.display = "none";
-      document.querySelector(".media-icons-container").style.display = "none";
-      // otherwise make sure controls are displayed
-    } else if (artwork_artist != "") {
+    if (artwork_artist != "") {
       document.querySelector(".name-artist").style.display = "block";
       document.querySelector(".media-icons-container").style.display = "flex";
     }
@@ -646,6 +656,8 @@ function App() {
         audioPlay={handlePlay}
         audioPause={handlePause}
         artId={artwork_id}
+        artYear={artwork_year}
+        artMaterial={artwork_material}
         artTitle={artwork_title}
         artistName={artwork_artist}
         artDescription={artwork_description}
