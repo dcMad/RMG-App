@@ -1,0 +1,677 @@
+/* font import */
+@font-face {
+    font-family: AkkuratPro;
+    src: url("./fonts/AkkuratPro.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Impact-Regular;
+    src: url("./fonts/impact.ttf") format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: AkkuratPro, 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    /*line-height: 1.5;*/
+    font-family: sans-serif;
+    display: flex;
+}
+
+/* typography */
+
+p {
+    font-size: 1rem;
+    padding: 1.5rem;
+    color: #9e9e9e;
+}
+
+h1 {
+    text-align: center;
+    color: #002A66;
+    font-size: 1.25rem;
+}
+
+h2 {
+    font-weight: normal;
+    color: #005113;
+    font-size: 1.25rem;
+}
+
+/* zoom buttons style */
+
+.main1 {
+    padding: 16px;
+    margin-top: 30px;
+}
+
+.main1 img {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    position: relative;
+}
+
+.button {
+    width: 300px;
+    height: 60px;
+    position: fixed;
+}
+
+#btnstyle {
+    background-color: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+}
+
+#icon {
+    width: 80px;
+    height: 80px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+/** SIDE MENU */
+
+.menu-title {
+    letter-spacing: 0.1rem;
+    font-size: 1.8rem;
+    margin-top: 7rem;
+}
+
+.menu-text {
+    font-weight: bolder;
+}
+
+.menu-text span {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.hamburger {
+    cursor: pointer;
+    width: 2.5rem;
+    margin: 2rem 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+}
+
+.st2 {
+    fill: #000000 !important;
+    display: unset !important;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 150;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.sidenav a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: white;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2.5rem;
+    width: 1.5rem;
+}
+
+.closebtn {
+    cursor: pointer;
+}
+
+.ar-btn {
+    cursor: pointer;
+    margin-left: 2rem;
+    width: 4rem;
+    height: auto;
+}
+
+.ar-btn.disabled {
+    display: none;
+}
+
+.menu-text {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-menu-link {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.menu li {
+    width: 100%;
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: #002A66;
+    ;
+}
+
+/* Search styling */
+
+.search {
+    max-width: 500px;
+    margin-top: 1rem;
+}
+
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4rem;
+    font-size: 1.25rem;
+    background-color: white;
+    padding: 1rem 2rem;
+}
+
+/* Sticky Navigation */
+.sticky-side-menu-link {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0 1.5rem 1rem 1.5rem;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.side-menu-header-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    border-bottom: #000 solid 2px;
+    width: 100%;
+}
+
+
+/** PULL UP MENU */
+/* added display none */
+.wrapper {
+    overflow-x: hidden;
+    background-color: #FFFFFF;
+    transition: 0.5s;
+    height: 85%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0 1rem;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.25);
+    z-index: 100;
+}
+
+.main {
+    flex-grow: 1;
+    padding: 20px;
+    height: 50vh;
+}
+
+.up-panel-toggle {
+    width: 100%;
+    height: 40px;
+    flex-grow: 0;
+    display: grid;
+    place-items: center;
+    color: black;
+    background-color: lightgrey;
+    border-radius: 15px;
+    border: none;
+}
+
+
+.panel-toggle {
+    width: 1.5rem;
+    margin: 2rem;
+    cursor: pointer;
+    display: none !important;
+}
+
+.panel-toggle-container {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+}
+
+/* display initial undos wrapper display */
+/* .wrapper.up-panel-open{
+    display: initial;
+} */
+
+.up-panel-open .panel-toggle {
+    display: initial !important;
+}
+
+.sp-icons-close {
+    margin-bottom: 20px;
+}
+
+.panel {
+    width: 100%;
+    flex-shrink: 0;
+    color: black;
+    background-color: lightgrey;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    padding: 20px;
+    height: 100vh;
+    margin-top: 100%;
+    overflow: hidden;
+}
+
+/* carousel */
+.carousel-image {
+    min-height: 225px;
+    background-color: #ccc;
+    border-radius: 0.5rem;
+}
+
+.slick-slide {
+    padding: 1rem 0.5rem;
+}
+
+/* media controls */
+
+.media-icons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.media-icon {
+    width: 4rem;
+    height: auto;
+    margin: 10px;
+}
+
+.media-icon:hover {
+    cursor: pointer;
+}
+
+.ar-disabled {
+    filter: brightness(0.4);
+}
+
+#pauseButton {
+    display: none;
+}
+
+#CC tspan{
+    font-family: Impact-Regular, sans-serif !important;
+}
+
+.active#Rectangle_96 {
+    fill: #000;
+}
+
+.active#CC {
+    fill: #fff;
+    position: absolute;
+    z-index: 10;
+}
+
+/* Audio captions/transcript */
+
+.artworkCaption {
+    background-color: #002A66;
+    color: #FFFFFF;
+    letter-spacing: 0.1rem;
+    border-radius: 1rem;
+    display: none;
+    opacity: 0;
+    transform-origin: 50% 0;
+    transition: all 0.5s ease-in-out;
+}
+
+@keyframes captionOpenAnimation {
+    0% {
+        transform: scaleY(0%);
+    }
+
+    100% {
+        transform: scaleY(100%);
+    }
+} 
+
+@keyframes captionCloseAnimation {
+    0% {
+        transform: scaleY(100%);
+    }
+
+    100% {
+        transform: scaleY(0%);
+    }
+} 
+
+
+@media(min-width: 900px) {
+    a {
+        display: none;
+    }
+}
+
+/** MAPBOX */
+
+.mapContainer {
+    width: 80vw;
+    height: 80vh;
+    background-color: aqua;
+}
+
+.marker {
+    background-image: url(/public/pin.svg);
+    width: 27px;
+    height: 41px;
+    cursor: pointer;
+}
+
+#marker-claimed {
+    background-image: url(/public/pin-visited.svg) !important;
+    width: 27px;
+    height: 41px;
+    cursor: pointer;
+}
+
+.mapboxgl-marker svg {
+    display: none;
+}
+
+.mapboxgl-popup {
+    max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mapboxgl-user-location-accuracy-circle {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.mapboxgl-ctrl-group button+button {
+    border-top: none !important;
+}
+
+/* canvas.mapboxgl-canvas {
+border: 3px solid;
+} */
+/** Removed default mapbox icons */
+
+.mapboxgl-ctrl button.mapboxgl-ctrl-zoom-out .mapboxgl-ctrl-icon,
+.mapboxgl-ctrl button.mapboxgl-ctrl-zoom-in .mapboxgl-ctrl-icon,
+.mapboxgl-ctrl button.mapboxgl-ctrl-compass .mapboxgl-ctrl-icon {
+    background-image: none !important;
+}
+
+.mapboxgl-ctrl-zoom-in,
+.mapboxgl-ctrl-zoom-out,
+.mapboxgl-ctrl-compass,
+.mapboxgl-ctrl-geolocate {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+}
+
+.mapboxgl-ctrl-zoom-in {
+    background-image: url("../img/icons/zoom-in.svg") !important;
+    background-repeat: no-repeat !important;
+    margin-top: 2rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.mapboxgl-ctrl-zoom-out {
+    background-image: url("../img/icons/zoom-out.svg") !important;
+    background-repeat: no-repeat !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.mapboxgl-ctrl-compass {
+    background-image: url("../img/icons/compass.svg") !important;
+    background-repeat: no-repeat !important;
+    margin-bottom: 0.5rem !important;
+}
+
+
+.mapboxgl-ctrl button.mapboxgl-ctrl-geolocate .mapboxgl-ctrl-icon {
+    background-image: url("../img/icons/location.svg") !important;
+}
+
+.mapboxgl-ctrl-geolocate {
+    background-color: #ffffff !important;
+    border-radius: 100% !important;
+    margin-top: 0 !important;
+}
+
+.mapboxgl-ctrl-bottom-right .mapboxgl-ctrl {
+    margin-right: 1.5rem !important;
+}
+
+.mapboxgl-ctrl-compass:hover,
+.mapboxgl-ctrl-zoom-out:hover,
+.mapboxgl-ctrl-zoom-in:hover {
+    background-color: transparent !important;
+}
+
+.mapboxgl-ctrl-group.zoom-controls {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.mapboxgl-ctrl-group {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin-bottom: 0 !important;
+    margin: 0 1.5rem !important;
+}
+
+/***! Badge menu styling ****/
+
+.badgeParent {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 150;
+    top: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.badgeParent h1 {
+    font-size: 1.8rem;
+    color: #002A66;
+}
+
+.badgeBtnContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.badgeMenuBtn {
+    cursor: pointer;
+    width: 2.5rem;
+    margin-top: 2rem;
+    position: absolute;
+    padding: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.badgeMenuNotification {
+    height: 15px;
+    width: 15px;
+    background-color: rgb(182, 33, 33);
+    border-radius: 50%;
+    margin: 2rem 0.75rem;
+    position: absolute;
+    top: 0;
+    z-index: 12;
+    display: none;
+}
+
+.badgeheader {
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 5px;
+    z-index: 150;
+    border-bottom: #000 solid 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.badgeCloseBtn {
+    width: 1.5rem;
+    margin: 2rem;
+}
+
+.badgeInfo p {
+    margin-right: auto;
+    padding-top: 0;
+    color: black;
+    font-weight: bold;
+}
+
+.badgeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.badgeDisplay {
+    width: 125px;
+    height: 125px;
+    margin: 1rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.badgeImg img {
+    width: 100%;
+    border-radius: 50%;
+    filter: grayscale(100%);
+}
+
+#claimedBadge {
+    filter: grayscale(0);
+    animation: bounce 0.5s ease-in-out 1;
+}
+
+@keyframes bounce {
+    30% {
+        transform: scale(1.25);
+    }
+
+    55% {
+        transform: scale(0.75);
+    }
+
+    75% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+/* Logo */
+.logobox{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+svg#logo {
+    height: 50%;
+    width: 50%;
+}
+
+.logo-img {
+    width: 40rem;
+}
+
+/* * MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+    .artwork-description {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .artwork-description {
+        text-align: left;
+    }
+    .logo-img {
+        max-width: 30rem;
+    }
+    /* .logobox {
+        width: 610px;
+        height: 1100px;
+    } */
+}

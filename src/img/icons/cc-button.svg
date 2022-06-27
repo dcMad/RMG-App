@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <g id="Artwork_28" data-name="Artwork 28" transform="translate(22.5 22.5)">
+    <g id="Group_218" data-name="Group 218" transform="translate(-22.5 -22.5)">
+      <g id="Ellipse_96" data-name="Ellipse 96" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.8">
+        <circle cx="22.5" cy="22.5" r="22.5" stroke="none"/>
+        <circle cx="22.5" cy="22.5" r="21.6" fill="none"/>
+      </g>
+      <g id="Rectangle_96" data-name="Rectangle 96" transform="translate(6.183 10.448)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.44">
+        <rect width="32.634" height="24.103" rx="4.58" stroke="none"/>
+        <rect x="0.72" y="0.72" width="31.194" height="22.663" rx="3.86" fill="none"/>
+      </g>
+      <text id="CC" transform="translate(8.788 12.359)" font-size="18.017" font-family="Impact" letter-spacing="0.14em"><tspan x="2.475" y="18">CC</tspan></text>
+    </g>
+  </g>
+</svg>
