@@ -600,10 +600,10 @@ function App() {
   // determine whether audio controls should be displayed
   function handleControlsDisplay() {
     // check if artist field is empty
-    if (artwork_artist != "") {
-      document.querySelector(".name-artist").style.display = "block";
-      document.querySelector(".media-icons-container").style.display = "flex";
-    }
+    // if (artwork_artist != "") {
+    //   document.querySelector(".name-artist").style.display = "block";
+    //   document.querySelector(".media-icons-container").style.display = "flex";
+    // }
   }
 
   //* audio button controls

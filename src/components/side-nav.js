@@ -6,33 +6,24 @@ import "../css/style.css";
 import { ReactComponent as CloseBtn } from "../img/icons/close-btn.svg";
 import { ReactComponent as Hamburger } from "../img/icons/hamburger-menu.svg";
 import { ReactComponent as ARBtn } from "../img/icons/ar-btn.svg";
-import _ from "lodash";
 
 import artData from "../data.json";
 
 class SideNav extends React.Component {
   constructor(props) {
     super(props);
-    //remove crown artwork from menu
-    // artData.artworks.shift();
-    console.log(_.pull);
   }
 
   // Search function
   searchMenu() {
     const input = document.querySelector(".search");
     let search = input.value;
-    // console.log(search);
     const listItems = document.getElementsByClassName("menu-item");
     const listText = document.getElementsByClassName("menu-text");
-    // console.log(listText);
     for (let i = 0; i < listItems.length; i++) {
       let textLower = listText[i].textContent.toLowerCase();
       let textUpper = listText[i].textContent.toUpperCase();
       let listItemText = listText[i].textContent;
-      //let text = (listText[i].textContent.toLowerCase()) || (listText[i].textContent.toUpperCase());
-      //let text = listText[i].textContent.toUpperCase();
-      // console.log(text);
       if (
         textLower.includes(search) ||
         textUpper.includes(search) ||
