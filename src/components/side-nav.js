@@ -6,6 +6,7 @@ import "../css/style.css";
 import { ReactComponent as CloseBtn } from "../img/icons/close-btn.svg";
 import { ReactComponent as Hamburger } from "../img/icons/hamburger-menu.svg";
 import { ReactComponent as ARBtn } from "../img/icons/ar-btn.svg";
+import _ from "lodash";
 
 import artData from "../data.json";
 
@@ -13,7 +14,8 @@ class SideNav extends React.Component {
   constructor(props) {
     super(props);
     //remove crown artwork from menu
-    artData.artworks.shift();
+    // artData.artworks.shift();
+    console.log(_.pull);
   }
 
   // Search function

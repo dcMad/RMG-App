@@ -11,6 +11,7 @@ import LogoPage from "./components/logo.js";
 import data from "./data.json";
 import { gsap } from "gsap";
 
+console.log(data);
 mapboxgl.accessToken =
   "pk.eyJ1IjoiY3RoZXJpYXVsdDk3IiwiYSI6ImNremgycWY2cjI1c2Eydmt1MHRjZDhmN24ifQ.R_TgJcYa-2HWW-Yz8ca2-g";
 
@@ -71,11 +72,11 @@ function App() {
           coordinates: [-78.865741, 43.894815],
         },
         properties: {
-          title: `${data.artworks[1].name}`,
-          artist: `${data.artworks[1].artist}`,
-          description: `${data.artworks[1].description}`,
-          audio: `${data.artworks[1].audioFile}`,
-          caption: `${data.artworks[1].caption}`,
+          title: `${data.artworks[0].name}`,
+          artist: `${data.artworks[0].artist}`,
+          description: `${data.artworks[0].description}`,
+          audio: `${data.artworks[0].audioFile}`,
+          caption: `${data.artworks[0].caption}`,
         },
         id: 2,
         visited: false,
@@ -88,11 +89,11 @@ function App() {
           coordinates: [-78.86597335338594, 43.89517103523595],
         },
         properties: {
-          title: `${data.artworks[2].name}`,
-          artist: `${data.artworks[2].artist}`,
-          description: `${data.artworks[2].description}`,
-          audio: `${data.artworks[2].audioFile}`,
-          caption: `${data.artworks[2].caption}`,
+          title: `${data.artworks[1].name}`,
+          artist: `${data.artworks[1].artist}`,
+          description: `${data.artworks[1].description}`,
+          audio: `${data.artworks[1].audioFile}`,
+          caption: `${data.artworks[1].caption}`,
         },
         id: 3,
         visited: false,
@@ -106,11 +107,11 @@ function App() {
           coordinates: [-78.860214, 43.897024],
         },
         properties: {
-          title: `${data.artworks[3].name}`,
-          artist: `${data.artworks[3].artist}`,
-          description: `${data.artworks[3].description}`,
-          audio: `${data.artworks[3].audioFile}`,
-          caption: `${data.artworks[3].caption}`,
+          title: `${data.artworks[2].name}`,
+          artist: `${data.artworks[2].artist}`,
+          description: `${data.artworks[2].description}`,
+          audio: `${data.artworks[2].audioFile}`,
+          caption: `${data.artworks[2].caption}`,
         },
         id: 4,
         visited: false,
@@ -123,11 +124,11 @@ function App() {
           coordinates: [-78.8665, 43.895025],
         },
         properties: {
-          title: `${data.artworks[4].name}`,
-          artist: `${data.artworks[4].artist}`,
-          description: `${data.artworks[4].description}`,
-          audio: `${data.artworks[4].audioFile}`,
-          caption: `${data.artworks[4].caption}`,
+          title: `${data.artworks[3].name}`,
+          artist: `${data.artworks[3].artist}`,
+          description: `${data.artworks[3].description}`,
+          audio: `${data.artworks[3].audioFile}`,
+          caption: `${data.artworks[3].caption}`,
         },
         id: 5,
         visited: false,
@@ -141,11 +142,11 @@ function App() {
           coordinates: [-78.86563330735321, 43.8953898565125],
         },
         properties: {
-          title: `${data.artworks[5].name}`,
-          artist: `${data.artworks[5].artist}`,
-          description: `${data.artworks[5].description}`,
-          audio: `${data.artworks[5].audioFile}`,
-          caption: `${data.artworks[5].caption}`,
+          title: `${data.artworks[4].name}`,
+          artist: `${data.artworks[4].artist}`,
+          description: `${data.artworks[4].description}`,
+          audio: `${data.artworks[4].audioFile}`,
+          caption: `${data.artworks[4].caption}`,
         },
         id: 6,
         visited: false,
