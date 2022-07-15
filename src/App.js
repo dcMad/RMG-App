@@ -37,6 +37,7 @@ function App() {
   let [artwork_audio, setAudio] = useState("");
   let [artworks_visited, setVisited] = useState([]);
   let [artwork_captions, setCaptions] = useState("");
+  let [artwork_funfacts, setFunFact] = useState("");
   let [playing, playAudio] = useState(false);
 
   const bounds = [
@@ -80,6 +81,7 @@ function App() {
           description: `${data.artworks[0].description}`,
           audio: `${data.artworks[0].audioFile}`,
           caption: `${data.artworks[0].caption}`,
+          funFacts: `${data.artworks[0].funFacts}`,
         },
         id: 2,
         visited: false,
@@ -99,6 +101,7 @@ function App() {
           description: `${data.artworks[1].description}`,
           audio: `${data.artworks[1].audioFile}`,
           caption: `${data.artworks[1].caption}`,
+          funFacts: `${data.artworks[1].funFacts}`,
         },
         id: 3,
         visited: false,
@@ -119,6 +122,7 @@ function App() {
           description: `${data.artworks[2].description}`,
           audio: `${data.artworks[2].audioFile}`,
           caption: `${data.artworks[2].caption}`,
+          funFacts: `${data.artworks[2].funFacts}`,
         },
         id: 4,
         visited: false,
@@ -138,6 +142,7 @@ function App() {
           description: `${data.artworks[3].description}`,
           audio: `${data.artworks[3].audioFile}`,
           caption: `${data.artworks[3].caption}`,
+          funFacts: `${data.artworks[3].funFacts}`,
         },
         id: 5,
         visited: false,
@@ -158,6 +163,7 @@ function App() {
           description: `${data.artworks[4].description}`,
           audio: `${data.artworks[4].audioFile}`,
           caption: `${data.artworks[4].caption}`,
+          funFacts: `${data.artworks[4].funFacts}`,
         },
         id: 6,
         visited: false,
@@ -300,7 +306,8 @@ function App() {
                 (artwork_audio = feature.properties.audio),
                 setCaptions(
                   (artwork_captions = feature.properties.caption),
-                  setId((artwork_id = feature.id))
+                  setId((artwork_id = feature.id)),
+                  setFunFact((artwork_funfacts = feature.properties.funFacts))
                 )
               )
             )
@@ -663,6 +670,7 @@ function App() {
         artDescription={artwork_description}
         artAudio={artwork_audio}
         artCaptions={artwork_captions}
+        artFunFacts={artwork_funfacts}
       />
       <LogoPage />
     </div>
