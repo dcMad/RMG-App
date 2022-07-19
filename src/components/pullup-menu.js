@@ -17,7 +17,7 @@ let menuUp = true;
 
 class PullMenu extends React.Component {
   render() {
-    console.log(this.props.artFunFacts);
+    console.log(this.props);
     return (
       <div className="wrapper up-panel-open">
         <article className="menuUp-panel">

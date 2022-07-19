@@ -37,7 +37,7 @@ function App() {
   let [artwork_audio, setAudio] = useState("");
   let [artworks_visited, setVisited] = useState([]);
   let [artwork_captions, setCaptions] = useState("");
-  let [artwork_funfacts, setFunFact] = useState("");
+  let [artwork_funFacts, setFunFacts] = useState("");
   let [playing, playAudio] = useState(false);
 
   const bounds = [
@@ -290,10 +290,12 @@ function App() {
     }
 
     for (const feature of geojson.features) {
+      console.log(feature.properties.funFacts)
       // create a HTML element for each feature
       const el = document.createElement("div");
       el.className = `marker marker-${feature.id}`;
       el.onclick = () => {
+        console.log(feature)
         setArtist(
           (artwork_artist = feature.properties.artist),
           setYear((artwork_year = feature.properties.year)),
@@ -307,7 +309,7 @@ function App() {
                 setCaptions(
                   (artwork_captions = feature.properties.caption),
                   setId((artwork_id = feature.id)),
-                  setFunFact((artwork_funfacts = feature.properties.funFacts))
+                  setFunFacts((artwork_funFacts = feature.properties.funFacts))
                 )
               )
             )
@@ -455,7 +457,8 @@ function App() {
                 (artwork_audio = feature.properties.audio),
                 setCaptions(
                   (artwork_captions = feature.properties.caption),
-                  setId((artwork_id = feature.id))
+                  setId((artwork_id = feature.id),
+                  setFunFacts((artwork_funFacts = feature.properties.funFacts)))
                 )
               )
             )
@@ -639,7 +642,6 @@ function App() {
     }
     handleControlsDisplay();
   };
-
   return (
     <div className="App">
       <div ref={mapContainer} className="map-container" />
@@ -669,8 +671,8 @@ function App() {
         artistName={artwork_artist}
         artDescription={artwork_description}
         artAudio={artwork_audio}
+        artFunFacts={artwork_funFacts}
         artCaptions={artwork_captions}
-        artFunFacts={artwork_funfacts}
       />
       <LogoPage />
     </div>

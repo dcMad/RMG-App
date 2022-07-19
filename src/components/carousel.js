@@ -81,6 +81,13 @@ export default function Carousel(props) {
             src={require("../img/artworks/coupland/coupland1.png")}
             alt="Group Portrait Image 1"
           />
+          <img
+            id="artwork-1-image-2"
+            className="carousel-image media-icon"
+            media="(min-width: 900px)"
+            src={require("../img/artworks/coupland/coupland2.png")}
+            alt="Group Portrait Image 1"
+          />
         </Slider>
       </div>
     );
