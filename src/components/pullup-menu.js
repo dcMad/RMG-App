@@ -6,6 +6,7 @@ import "../css/style.css";
 import Carousel from "./carousel.js";
 
 import { ReactComponent as ARBtn } from "../img/icons/ar-btn.svg";
+import { ReactComponent as SelfieBtn } from "../img/icons/selfie-btn.svg";
 import { ReactComponent as VoiceBtn } from "../img/icons/voiceover-btn.svg";
 import { ReactComponent as DownArrow } from "../img/icons/down-arrow.svg";
 
@@ -62,6 +63,14 @@ class PullMenu extends React.Component {
               alt="Closed Captioning Button"
               onClick={this.props.captionClick}
             />
+            {this.props.artId == 3 ? (
+              <a href="https://development.rmgpublicart.ca/selfie/">
+                <SelfieBtn
+                  className="media-icon"
+                  alt="Augmented Reality Experience Button"
+                />
+              </a>
+            ) : null}
           </div>
 
           <p className="artworkCaption"> {this.props.artCaptions} </p>
