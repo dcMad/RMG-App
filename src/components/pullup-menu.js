@@ -18,6 +18,8 @@ let menuUp = true;
 
 class PullMenu extends React.Component {
   render() {
+
+  console.log(this.props.artId);
     return (
       <div className="wrapper up-panel-open">
         <article className="menuUp-panel">
@@ -64,7 +66,7 @@ class PullMenu extends React.Component {
               onClick={this.props.captionClick}
             />
             {this.props.artId == 3 ? (
-              <a href="https://development.rmgpublicart.ca/selfie/">
+              <a href="https://staging.jiahuacui.com/rmg-selfie">
                 <SelfieBtn
                   className="media-icon"
                   alt="Augmented Reality Experience Button"
