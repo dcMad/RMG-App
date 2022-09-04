@@ -316,6 +316,11 @@ function App() {
           )
         );
 
+        let current = document.querySelector('.current-marker')
+        if(current){
+          current.classList.remove("current-marker")
+        }
+        el.classList.add("current-marker")
         //if the waypoint hasn't been visited
         if (!feature.visited) {
           //! change appTesting to true if not testing

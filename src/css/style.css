@@ -415,7 +415,14 @@ input[type=text] {
 }
 
 .marker-claimed {
-    background-image: url(/public/pin-visited.svg) !important;
+    background-image: url(/public/pin-visited.svg);
+    width: 27px;
+    height: 41px;
+    cursor: pointer;
+}
+
+.current-marker{
+    background-image: url(/public/pin-current.svg) !important;
     width: 27px;
     height: 41px;
     cursor: pointer;
