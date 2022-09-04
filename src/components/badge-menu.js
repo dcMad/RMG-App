@@ -70,7 +70,6 @@ class BadgeMenu extends React.Component {
   }
 
   openBadgeMenu() {
-    console.log(this.props.artworkValues);
 
     //clear badge notification
     document.querySelector(".badgeMenuNotification").style.display = "none";
@@ -119,6 +118,7 @@ class BadgeMenu extends React.Component {
   }
 
   render() {
+    console.log(this.state.badgeArray)
     return (
       <main>
         <section className="badgeParent" id="badgePassportCard">
@@ -161,7 +161,7 @@ class BadgeMenu extends React.Component {
               onBadgeClick={this.onClick}
             /> */}
             <Badge
-              badge={this.state.badgeArray[5]}
+              badge={this.state.badgeArray[4]}
               onBadgeClick={this.onClick}
             />
             {/* <Badge badge={this.state.badgeArray[6]} onBadgeClick={this.onClick} />

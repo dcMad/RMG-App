@@ -7,13 +7,14 @@ class Badge extends React.Component {
     render () {
         const {badge, onBadgeClick} = this.props
         let output;
-        if(badge.visited) {
+        if(badge && badge.visited) {
             output = 
             <article className="badgeImg">
                 <img id='claimedBadge' onClick={onBadgeClick} src={badge.color} data-id={badge.id} alt=" badge icon." />
             </article>
 
-        } else {
+        } else if(badge){
+            console.log(badge)
             output =             
             <article className="badgeImg">
                 <img onClick={onBadgeClick} src={badge.color} data-id={badge.id} alt=" badge icon." />
