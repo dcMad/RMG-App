@@ -407,14 +407,14 @@ input[type=text] {
     background-color: aqua;
 }
 
-.marker {
+.marker-unvisited {
     background-image: url(/public/pin.svg);
     width: 27px;
     height: 41px;
     cursor: pointer;
 }
 
-#marker-claimed {
+.marker-claimed {
     background-image: url(/public/pin-visited.svg) !important;
     width: 27px;
     height: 41px;

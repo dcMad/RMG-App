@@ -53,7 +53,7 @@ class BadgeMenu extends React.Component {
           { color: GreenBadge, visited: false, id: 2 },
           { color: GreenTwoBadge, visited: false, id: 3 },
           { color: OrangeBadge, visited: false, id: 4 },
-          { color: PurpleBadge, visited: false, id: 5 },
+          // { color: PurpleBadge, visited: false, id: 5 },
           { color: YellowBadge, visited: false, id: 6 },
           // {color: RedBadge, visited:false, id: 7},
           // {color: GreyBadge, visited:false, id: 8},
@@ -154,10 +154,12 @@ class BadgeMenu extends React.Component {
               badge={this.state.badgeArray[3]}
               onBadgeClick={this.onClick}
             />
-            <Badge
+            {
+            //river tree
+            /* <Badge
               badge={this.state.badgeArray[4]}
               onBadgeClick={this.onClick}
-            />
+            /> */}
             <Badge
               badge={this.state.badgeArray[5]}
               onBadgeClick={this.onClick}

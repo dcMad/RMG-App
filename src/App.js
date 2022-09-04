@@ -36,6 +36,7 @@ function App() {
   );
   let [artwork_audio, setAudio] = useState("");
   let [artworks_visited, setVisited] = useState([]);
+  let [artworks_current, setCurrent] = useState(true);
   let [artwork_captions, setCaptions] = useState("");
   let [artwork_funFacts, setFunFacts] = useState("");
   let [playing, playAudio] = useState(false);
@@ -49,7 +50,7 @@ function App() {
   const geojson = {
     type: "FeatureCollection",
     features: [
-      //removing crown from map and geo
+      // crown 
       // {
       //   type: "Feature",
       //   geometry: {
@@ -128,27 +129,28 @@ function App() {
         visited: false,
         qr_url: "https://development.rmgpublicart.ca/Map/?artwork=reverb",
       },
-      {
-        type: "Feature",
-        geometry: {
-          type: "Point",
-          coordinates: [-78.8665, 43.895025],
-        },
-        properties: {
-          title: `${data.artworks[3].name}`,
-          artist: `${data.artworks[3].artist}`,
-          year: `${data.artworks[3].year}`,
-          material: `${data.artworks[3].material}`,
-          description: `${data.artworks[3].description}`,
-          audio: `${data.artworks[3].audioFile}`,
-          caption: `${data.artworks[3].caption}`,
-          funFacts: `${data.artworks[3].funFacts}`,
-        },
-        id: 5,
-        visited: false,
-        qr_url:
-          "https://development.rmgpublicart.ca/Map/?artwork=river-tree-bench",
-      },
+      // river tree
+      // {
+      //   type: "Feature",
+      //   geometry: {
+      //     type: "Point",
+      //     coordinates: [-78.8665, 43.895025],
+      //   },
+      //   properties: {
+      //     title: `${data.artworks[3].name}`,
+      //     artist: `${data.artworks[3].artist}`,
+      //     year: `${data.artworks[3].year}`,
+      //     material: `${data.artworks[3].material}`,
+      //     description: `${data.artworks[3].description}`,
+      //     audio: `${data.artworks[3].audioFile}`,
+      //     caption: `${data.artworks[3].caption}`,
+      //     funFacts: `${data.artworks[3].funFacts}`,
+      //   },
+      //   id: 5,
+      //   visited: false,
+      //   qr_url:
+      //     "https://development.rmgpublicart.ca/Map/?artwork=river-tree-bench",
+      // },
       {
         type: "Feature",
         geometry: {
@@ -290,12 +292,10 @@ function App() {
     }
 
     for (const feature of geojson.features) {
-      console.log(feature.properties.funFacts)
       // create a HTML element for each feature
       const el = document.createElement("div");
-      el.className = `marker marker-${feature.id}`;
+      el.className = `marker-unvisited marker-${feature.id}`;
       el.onclick = () => {
-        console.log(feature)
         setArtist(
           (artwork_artist = feature.properties.artist),
           setYear((artwork_year = feature.properties.year)),
@@ -337,7 +337,8 @@ function App() {
                   feature.geometry.coordinates[1] + distanceFromWaypoint
               ) {
                 //add the marker claimed id to the marker
-                el.id = "marker-claimed";
+                el.classList.add("marker-claimed");
+                el.classList.remove("marker-unvisited");
                 //set the waypoint to visited
                 setVisited((artworks_visited) =>
                   artworks_visited.concat({ visited: true, id: feature.id })
@@ -351,7 +352,8 @@ function App() {
           } else {
             //! waypoint visit testing
             //add the marker claimed id to the marker
-            el.id = "marker-claimed";
+            el.classList.add("marker-claimed");
+            el.classList.remove("marker-unvisited");
             //set the waypoint to visited
             setVisited((artworks_visited) =>
               artworks_visited.concat({ visited: true, id: feature.id })
