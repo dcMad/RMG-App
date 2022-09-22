@@ -18,7 +18,10 @@ let menuUp = true;
 
 class PullMenu extends React.Component {
   render() {
-    console.log(this.props.artId)
+    //1 is default rmg and should be displayed
+    if(this.props.artId==1){
+      return (<div></div>)
+    }else
     return (
       <div className="wrapper up-panel-open">
         <article className="menuUp-panel">
@@ -39,7 +42,7 @@ class PullMenu extends React.Component {
           ) : null}
           <div className="media-icons-container">
             {this.props.artId == 3 ? (
-              <a href="https://development.rmgpublicart.ca/ar/">
+              <a href="https://staging.rileyline.ca/rmg-ar-sept/">
                 <ARBtn
                   className="media-icon"
                   alt="Augmented Reality Experience Button"

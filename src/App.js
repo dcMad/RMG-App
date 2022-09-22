@@ -41,6 +41,8 @@ function App() {
   let [artwork_funFacts, setFunFacts] = useState("");
   let [playing, playAudio] = useState(false);
 
+  
+
   const bounds = [
     [-79.01808046351204, 43.82294908585224], // Southwest coordinates 43.82294908585224, -79.01808046351204
     [-78.70133897188, 43.963409442018026], // Northeast coordinates 43.97868894806841, -78.61396666057524/ 43.963409442018026, -78.70133897188
@@ -416,7 +418,7 @@ function App() {
   });
 
   //homepath for the app
-  let homePath = "https://development.rmgpublicart.ca/Map/";
+  let homePath = "https://staging.jiahuacui.com/";
 
   // open pull up menu
   function openPullUpMenu(qrCode) {
@@ -643,6 +645,7 @@ function App() {
   window.onload = () => {
     //check for qr code url
     let chosenArtwork = window.location.href;
+    closePullUpMenu();
     if (window.location.href != homePath) {
       //open menu corresponding to the qr code
       openPullUpMenu(chosenArtwork);

@@ -14,7 +14,6 @@ class Badge extends React.Component {
             </article>
 
         } else if(badge){
-            console.log(badge)
             output =             
             <article className="badgeImg">
                 <img onClick={onBadgeClick} src={badge.color} data-id={badge.id} alt=" badge icon." />

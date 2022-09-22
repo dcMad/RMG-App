@@ -114,11 +114,9 @@ class BadgeMenu extends React.Component {
     // this.setState({
     //     badgeArray : newBadgeArray
     // })
-    console.log("Badge clicked");
   }
 
   render() {
-    console.log(this.state.badgeArray)
     return (
       <main>
         <section className="badgeParent" id="badgePassportCard">
