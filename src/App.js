@@ -10,6 +10,7 @@ import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-load
 import LogoPage from "./components/logo.js";
 import data from "./data.json";
 import { gsap } from "gsap";
+import { isCompositeComponent } from "react-dom/test-utils";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiY3RoZXJpYXVsdDk3IiwiYSI6ImNremgycWY2cjI1c2Eydmt1MHRjZDhmN24ifQ.R_TgJcYa-2HWW-Yz8ca2-g";
@@ -347,8 +348,10 @@ function App() {
                 el.classList.add("marker-claimed");
                 el.classList.remove("marker-unvisited");
                 //set the waypoint to visited
-                setVisited((artworks_visited) =>
+                setVisited((artworks_visited) =>{
                   artworks_visited.concat({ visited: true, id: feature.id })
+                  console.log(artworks_visited)
+                }
                 );
                 document.querySelector(".badgeMenuNotification").style.display =
                   "unset"; //show the notification on the badge menu

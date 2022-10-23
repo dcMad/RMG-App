@@ -6,12 +6,12 @@ import { ReactComponent as CloseBtn } from "../img/icons/close-btn.svg";
 import { ReactComponent as BadgeMenuIcon } from "../img/icons/badge-btn.svg";
 import Badge from "./badge.js";
 
-import BlueBadge from "../img/badges/badge_crown.svg";
+// import BlueBadge from "../img/badges/badge_crown.svg";
 import GreenBadge from "../img/badges/badge_grace.svg";
 import GreenTwoBadge from "../img/badges/badge_groupportrait.svg";
 import OrangeBadge from "../img/badges/badge_reverb.svg";
-import PurpleBadge from "../img/badges/badge_rivertree.svg";
-import RedBadge from "../img/badges/badge_silentbells.svg";
+// import PurpleBadge from "../img/badges/badge_rivertree.svg";
+// import RedBadge from "../img/badges/badge_silentbells.svg";
 import YellowBadge from "../img/badges/badge_upstartII.svg";
 import GreyBadge from "../img/temp_badges/badge_grey.svg";
 
@@ -49,7 +49,7 @@ class BadgeMenu extends React.Component {
     if (localBadgeArray.length === 0) {
       this.state = {
         badgeArray: [
-          { color: BlueBadge, visited: false, id: 1 },
+          // { color: BlueBadge, visited: false, id: 1 },
           { color: GreenBadge, visited: false, id: 2 },
           { color: GreenTwoBadge, visited: false, id: 3 },
           { color: OrangeBadge, visited: false, id: 4 },
@@ -84,11 +84,15 @@ class BadgeMenu extends React.Component {
 
     let newBadgeArray = this.state.badgeArray.slice();
     let index;
-
+    console.log(this.props.artworksVisited)
     //loop through all artworks to check if they have been visited
     for (let element of this.props.artworksVisited) {
       if (element.visited) {
-        index = element.id - 1;
+        if(element.id == 6){
+          index = 3;
+        }else{
+          index = element.id - 2;
+        }
         newBadgeArray[index].visited = true;
         localStorage.setItem("VisitedArray", JSON.stringify(newBadgeArray));
         this.setState({
@@ -107,6 +111,7 @@ class BadgeMenu extends React.Component {
   // }
 
   onClick(event) {
+    // console.log(event)
     // let newBadgeArray = this.state.badgeArray.slice();
     // let index = event.target.getAttribute("data-id") - 1;
     // newBadgeArray[index].visited = true;
@@ -141,15 +146,15 @@ class BadgeMenu extends React.Component {
               onBadgeClick={this.onClick}
             /> */}
             <Badge
+              badge={this.state.badgeArray[0]}
+              onBadgeClick={this.onClick}
+            />
+            <Badge
               badge={this.state.badgeArray[1]}
               onBadgeClick={this.onClick}
             />
             <Badge
               badge={this.state.badgeArray[2]}
-              onBadgeClick={this.onClick}
-            />
-            <Badge
-              badge={this.state.badgeArray[3]}
               onBadgeClick={this.onClick}
             />
             {
@@ -159,7 +164,7 @@ class BadgeMenu extends React.Component {
               onBadgeClick={this.onClick}
             /> */}
             <Badge
-              badge={this.state.badgeArray[4]}
+              badge={this.state.badgeArray[3]}
               onBadgeClick={this.onClick}
             />
             {/* <Badge badge={this.state.badgeArray[6]} onBadgeClick={this.onClick} />
