@@ -19,7 +19,7 @@ let menuUp = true;
 class PullMenu extends React.Component {
   render() {
     //1 is default rmg and should be displayed
-    if(this.props.artId==1){
+    if(this.props.artId==0){
       return (<div></div>)
     }else
     return (

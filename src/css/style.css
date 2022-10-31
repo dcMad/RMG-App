@@ -661,6 +661,9 @@ svg#logo {
 .logo-img {
     width: 40rem;
 }
+.artwork-funfacts{
+    text-align: left;
+}
 
 /* * MEDIA QUERIES */
 

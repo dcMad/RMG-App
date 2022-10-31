@@ -27,7 +27,7 @@ function App() {
   let captOpen = false;
 
   //artwork state variables
-  let [artwork_id, setId] = useState("1");
+  let [artwork_id, setId] = useState("0");
   let [artwork_artist, setArtist] = useState("");
   let [artwork_year, setYear] = useState("");
   let [artwork_material, setMaterial] = useState("");
@@ -53,29 +53,11 @@ function App() {
   const geojson = {
     type: "FeatureCollection",
     features: [
-      // crown 
-      // {
-      //   type: "Feature",
-      //   geometry: {
-      //     type: "Point",
-      //     coordinates: [-78.866266, 43.89484],
-      //   },
-      //   properties: {
-      //     title: `${data.artworks[0].name}`,
-      //     artist: `${data.artworks[0].artist}`,
-      //     description: `${data.artworks[0].description}`,
-      //     audio: `${data.artworks[0].audioFile}`,
-      //     caption: `${data.artworks[0].caption}`,
-      //   },
-      //   id: 1,
-      //   visited: false,
-      //   qr_url: "https://development.rmgpublicart.ca/Map/?artwork=crown",
-      // },
       {
         type: "Feature",
         geometry: {
           type: "Point",
-          coordinates: [-78.865741, 43.894815],
+          coordinates: [-78.866266, 43.89484],
         },
         properties: {
           title: `${data.artworks[0].name}`,
@@ -86,6 +68,26 @@ function App() {
           audio: `${data.artworks[0].audioFile}`,
           caption: `${data.artworks[0].caption}`,
           funFacts: `${data.artworks[0].funFacts}`,
+        },
+        id: 1,
+        visited: false,
+        qr_url: "https://development.rmgpublicart.ca/Map/?artwork=crown",
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-78.865741, 43.894815],
+        },
+        properties: {
+          title: `${data.artworks[1].name}`,
+          artist: `${data.artworks[1].artist}`,
+          year: `${data.artworks[1].year}`,
+          material: `${data.artworks[1].material}`,
+          description: `${data.artworks[1].description}`,
+          audio: `${data.artworks[1].audioFile}`,
+          caption: `${data.artworks[1].caption}`,
+          funFacts: `${data.artworks[1].funFacts}`,
         },
         id: 2,
         visited: false,
@@ -98,14 +100,14 @@ function App() {
           coordinates: [-78.86597335338594, 43.89517103523595],
         },
         properties: {
-          title: `${data.artworks[1].name}`,
-          artist: `${data.artworks[1].artist}`,
-          year: `${data.artworks[1].year}`,
-          material: `${data.artworks[1].material}`,
-          description: `${data.artworks[1].description}`,
-          audio: `${data.artworks[1].audioFile}`,
-          caption: `${data.artworks[1].caption}`,
-          funFacts: `${data.artworks[1].funFacts}`,
+          title: `${data.artworks[2].name}`,
+          artist: `${data.artworks[2].artist}`,
+          year: `${data.artworks[2].year}`,
+          material: `${data.artworks[2].material}`,
+          description: `${data.artworks[2].description}`,
+          audio: `${data.artworks[2].audioFile}`,
+          caption: `${data.artworks[2].caption}`,
+          funFacts: `${data.artworks[2].funFacts}`,
         },
         id: 3,
         visited: false,
@@ -119,46 +121,24 @@ function App() {
           coordinates: [-78.860214, 43.897024],
         },
         properties: {
-          title: `${data.artworks[2].name}`,
-          artist: `${data.artworks[2].artist}`,
-          year: `${data.artworks[2].year}`,
-          material: `${data.artworks[2].material}`,
-          description: `${data.artworks[2].description}`,
-          audio: `${data.artworks[2].audioFile}`,
-          caption: `${data.artworks[2].caption}`,
-          funFacts: `${data.artworks[2].funFacts}`,
+          title: `${data.artworks[3].name}`,
+          artist: `${data.artworks[3].artist}`,
+          year: `${data.artworks[3].year}`,
+          material: `${data.artworks[3].material}`,
+          description: `${data.artworks[3].description}`,
+          audio: `${data.artworks[3].audioFile}`,
+          caption: `${data.artworks[3].caption}`,
+          funFacts: `${data.artworks[3].funFacts}`,
         },
         id: 4,
         visited: false,
         qr_url: "https://development.rmgpublicart.ca/Map/?artwork=reverb",
       },
-      // river tree
-      // {
-      //   type: "Feature",
-      //   geometry: {
-      //     type: "Point",
-      //     coordinates: [-78.8665, 43.895025],
-      //   },
-      //   properties: {
-      //     title: `${data.artworks[3].name}`,
-      //     artist: `${data.artworks[3].artist}`,
-      //     year: `${data.artworks[3].year}`,
-      //     material: `${data.artworks[3].material}`,
-      //     description: `${data.artworks[3].description}`,
-      //     audio: `${data.artworks[3].audioFile}`,
-      //     caption: `${data.artworks[3].caption}`,
-      //     funFacts: `${data.artworks[3].funFacts}`,
-      //   },
-      //   id: 5,
-      //   visited: false,
-      //   qr_url:
-      //     "https://development.rmgpublicart.ca/Map/?artwork=river-tree-bench",
-      // },
       {
         type: "Feature",
         geometry: {
           type: "Point",
-          coordinates: [-78.86563330735321, 43.8953898565125],
+          coordinates: [-78.8665, 43.895025],
         },
         properties: {
           title: `${data.artworks[4].name}`,
@@ -169,6 +149,27 @@ function App() {
           audio: `${data.artworks[4].audioFile}`,
           caption: `${data.artworks[4].caption}`,
           funFacts: `${data.artworks[4].funFacts}`,
+        },
+        id: 5,
+        visited: false,
+        qr_url:
+          "https://development.rmgpublicart.ca/Map/?artwork=river-tree-bench",
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-78.86563330735321, 43.8953898565125],
+        },
+        properties: {
+          title: `${data.artworks[5].name}`,
+          artist: `${data.artworks[5].artist}`,
+          year: `${data.artworks[5].year}`,
+          material: `${data.artworks[5].material}`,
+          description: `${data.artworks[5].description}`,
+          audio: `${data.artworks[5].audioFile}`,
+          caption: `${data.artworks[5].caption}`,
+          funFacts: `${data.artworks[5].funFacts}`,
         },
         id: 6,
         visited: false,

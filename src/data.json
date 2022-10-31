@@ -1,86 +1,104 @@
 {
-    "artworks": [
-        {
-            "id": "2",
-            "name": "grace",
-            "artist": "MaryAnn Barkhouse",
-            "year": "2007",
-            "material": "Bronze - Granite",
-            "audioFile": "./barkhouse-summary_text.mp3",
-            "description": "In 2007, grace was certified by RMG. The name of the grace comes from the inspiration of three beavers which are located in front of the gallery which represents the beauty, mirth as well as good cheers. Beavers is a strong and very graceful animal which represents by the surrounding of the environment landscape by hard work. Overall, the message from the grace is that hard work is everything to make our goals true.",
-            "ar": false,
-            "caption": "Mary Anne Barkhouse is a nationally acclaimed artist, born in Vancouver, British Columbia but with strong ties to both coasts: her mother is from the Nimpkish band, Kwakiutl First Nation of Alert Bay, BC and her father is of German and British descent from Nova Scotia. Barkhouse’s work examines issues surrounding empire, survival, history, and the environment through animal imagery. This work features three beavers sitting atop a piece of granite from the Canadian Shield, which is highly polished. The title grace is influenced by Italian sculptor Antonio Canova’s The Three Graces, depicting three goddesses representing Beauty, Mirth, and Good Cheer. While beavers might not be graceful animals on land, in water they are elegant and efficient. Beavers can reinvent their territory and the surrounding landscape through hard work. By placing these beavers on a piece of the Canadian Shield, Barkhouse places them as valuable players in the ecosystem of Canada’s boreal forest.",
-            "funFacts": [
-                "Beavers are survivors of the fashion industry in the 16th and 17th century. Their furs and hinds were in high demand for fashion, so much so that it depleted the beaver population dramatically. ",
-                "Oshawa was once the site of French fur-trading, and the Oshawa Creek (located behind the gallery), was an important carrying route for Indigenous peoples",
-                "Mary Anne Barkhouse’s work often features animals such as wolves, ravens, moose, beaver, and rabbits.",
-                "Barkhouse’s home in Haliburton Highland is surrounded by Canadian Shield wilderness",
-                "The Canadian Shield contains some of the oldest rocks on Earth."
-            ]
-        },
-        {
-            "id": "3",
-            "name": "Group Portrait 1957",
-            "artist": "Douglas Coupland",
-            "year": "2011",
-            "material": "Aluminum - Black Polane Paint",
-            "audioFile": "./Coupland-summary_text_minus_artist_statement.mp3",
-            "description": "Internationally renowned artist and author, Douglas Coupland was approached in the spring of 2010  to produce a sculpture to animate the front of The Robert McLaughlin Gallery. His personal relationship with Arthur Erikson, the architect of the 1987 gallery expansion, and his ongoing interest in mid-century modernism, made the proposal particularly appealing to him.",
-            "ar": true,
-            "caption": "In 2010, the RMG commissioned artist Douglas Coupland to animate the front of the building with a sculpture. Coupland, a fan of mid-century modernism, was intrigued by Oshawa and the RMG’s connection to the Abstract Expressionist art collective, Painters Eleven. Coupland proposed a work that reflected the Gallery’s Painters Eleven focus and to transmit forward the influences of the group to future generations.",
-            "funFacts": [
-                "Douglas Coupland is an internationally renowned, Vancouver-based Canadian artist, author, and designer. ",
-                "Coupland was friends with the RMG’s building modernist architect, Arthur Erikson.",
-                "His first novel, the 1991 international bestseller Generation X: Tales for an Accelerated Culture, popularized the term ‘Generation X’.",
-                "He has published thirteen novels and has also been a regular contributor to the New York Times and Vice."
-            ]
-        },
-        {
-            "id": "4",
-            "name": "Reverb",
-            "artist": "Noel Harding",
-            "year": "2015",
-            "material": "Stainless Steel - Light",
-            "audioFile": "./Harding-summary_text.mp3",
-            "description": "Noel Harding depicted an abstract steel stage-like item located in front of the tribute center in 2015.  He wanted to capture the crowd’s atmosphere and excitement in the arena.  When the arena is full it projects light onto the sculpture as if it is the energy of the crowd and arena.  It reminds you of a megaphone, stage, hockey net, or amphitheater.  The mirrored speech bubbles on the outside represent the community’s energy.",
-            "ar": false,
-            "caption": "To celebrate Oshawa’s participation in the 2015 Pan/Am Games, the RMG commissioned a sculpture to be placed adjacent to the sporting venue, now known as the Tribute Communities Centre. To prepare for his commission proposal, artist Noel Harding attended an Oshawa Generals hockey game. He was inspired by the energy of the crowd and proposed this community-focused work. The shape of the structure, at 19 feet high, is curved, which resembles a megaphone, an amphitheater, a stage, or even a hockey net. It’s covered in mirrored speech bubbles that reflects the enthusiasm of the crowd and brings that energy into a conversation outside of the arena. To further connect the structure outside to the action within the building, a microphone is positioned above centre ice inside that transmits a signal to lights at the base of the steel structure, transforming the sounds into coloured beams of light that are triggered every time the crowd cheers.",
-            "funFacts": [
-                "The word ‘reverb’ refers to an effect whereby the sound produced by an amplifier or an amplified musical instrument is made to reverberate. ",
-                "The mirrors make it a popular spot for graduation pictures or selfies.",
-                "With a career spanning over forty years, Noel Harding only started doing public art in the later part of his life. He is also known for video and kinetic installations."
-            ]
-        },
-        {
-            "id": "5",
-            "name": "River Tree/Bench",
-            "artist": "Reinhard Reitzenstein",
-            "year": "2002",
-            "material": "Bronze - Limestone",
-            "audioFile": "./reitzenstein-summary_text.mp3",
-            "description": "Reinhard Reitzenstein was born in Uelzen, Germany and immigrated to Canada with his family in 1956. Reitzenstein is considered an environmental sculptor. This 24-feet long bronze sculpture is of an ironwood tree lying on its side. In the early 1970s, Reitzenstein excavated the entire root system of an ancient ironwood tree on his family’s property in Ottawa. The roots he uncovered had grown around obstacles, boulders, and stones, similar to what this sculpture shows. This work explores the majestic ironwood’s ability to adapt to its environment. Much of Reitzenstein’s work centres on the tree as an archetype for the self and he uses it to reflect on the relationship humans share with the forests of the world.",
-            "ar": false,
-            "caption": "Reinhard Reitzenstein was born in Uelzen, Germany and immigrated to Canada with his family in 1956. Reitzenstein is considered an environmental sculptor. This 24-feet long bronze sculpture is of an ironwood tree lying on its side. In the early 1970s, Reitzenstein excavated the entire root system of an ancient ironwood tree on his family’s property in Ottawa. The roots he uncovered had grown around obstacles, boulders, and stones, similar to what this sculpture shows. This work explores the majestic ironwood’s ability to adapt to its environment. Much of Reitzenstein’s work centres on the tree as an archetype for the self and he uses it to reflect on the relationship humans share with the forests of the world.",
-            "funFacts": [
-                "Look closely and you will see a spine in the trunk of the tree. This speaks to our connection to nature and how it is the backbone to our existence.",
-                "Reinhard Reitzenstein called this work Tree Bench because he hoped people would sit and rest in its natural environment. "
-            ]
-        },
-        {
-            "id": "6",
-            "name": "Upstart II",
-            "artist": "Clement Meadmore",
-            "year": "1968",
-            "material": "Aluminum - Black Polane Paint",
-            "audioFile": "./meadmore-summary_text.mp3",
-            "description": "Clement Meadmore is an internationally acclaimed artist known for his monumental outdoor sculptures that combine Abstract Expressionism and Minimalism. Despite its mass and weight, this sculpture gives an impression of lightness, and the bending form adds a dynamic element that reads as a heroic punctuation mark. Utilizing simple geometric forms of an elongated metal tube and semi-circular form, Upstart II exemplifies Meadmore’s description of his work as “transcended geometry.”",
-            "ar": false,
-            "caption": "Clement Meadmore is an internationally acclaimed artist known for his monumental outdoor sculptures that combine Abstract Expressionism and Minimalism. Despite its mass and weight, this sculpture gives an impression of lightness, and the bending form adds a dynamic element that reads as a heroic punctuation mark. Utilizing simple geometric forms of an elongated metal tube and semi-circular form, Upstart II exemplifies Meadmore’s description of his work as “transcended geometry.”",
-            "funFacts": [
-                "This sculpture is made of 6,800 pounds of aluminum and is 25.5 feet long.",
-                "This is the first major work by Clement Meadmore in a Canadian art collection.",
-                "There is no specific way to view it—no matter the angle there is a sense of movement that has been achieved by combining two geometric elements. "
-            ]
-        }
-    ]
+  "artworks": [
+    {
+      "id": "1",
+      "name": "Crown",
+      "artist": "Douglas Bentham",
+      "year": "2007",
+      "material": "Bronze - Granite",
+      "audioFile": "./Bentham-summary_text.mp3",
+      "description": "Douglas Bentham is a major Canadian artist who has been creating abstract sculptures for over forty years. This work, Crown, was an important turning point in his artistic career. It was this work that influenced his move towards large-scale metal sculptures. Crown sparked controversy when it came to Oshawa. The artist responded to the less-than-favourable reviews by saying that he was not surprised by the feedback: “There is always the issue of realism versus abstraction. I think the problem is a reluctance of some people to trust their eye to experience what they are seeing.”",
+      "ar": false,
+      "caption": "Douglas Bentham is a major Canadian artist who has been creating abstract sculptures for over forty years. This work, Crown, was an important turning point in his artistic career. It was this work that influenced his move towards large-scale metal sculptures. Crown sparked controversy when it came to Oshawa. The artist responded to the less-than-favourable reviews by saying that he was not surprised by the feedback: “There is always the issue of realism versus abstraction. I think the problem is a reluctance of some people to trust their eye to experience what they are seeing.”",
+      "funFacts": [
+        "Beavers are survivors of the fashion industry in the 16th and 17th century. Their furs and hinds were in high demand for fashion, so much so that it depleted the beaver population dramatically. ",
+        "Oshawa was once the site of French fur-trading, and the Oshawa Creek (located behind the gallery), was an important carrying route for Indigenous peoples",
+        "Mary Anne Barkhouse’s work often features animals such as wolves, ravens, moose, beaver, and rabbits.",
+        "Barkhouse’s home in Haliburton Highland is surrounded by Canadian Shield wilderness",
+        "The Canadian Shield contains some of the oldest rocks on Earth."
+      ]
+    },
+    {
+      "id": "2",
+      "name": "grace",
+      "artist": "MaryAnn Barkhouse",
+      "year": "2007",
+      "material": "Bronze - Granite",
+      "audioFile": "./barkhouse-summary_text.mp3",
+      "description": "In 2007, grace was certified by RMG. The name of the grace comes from the inspiration of three beavers which are located in front of the gallery which represents the beauty, mirth as well as good cheers. Beavers is a strong and very graceful animal which represents by the surrounding of the environment landscape by hard work. Overall, the message from the grace is that hard work is everything to make our goals true.",
+      "ar": false,
+      "caption": "Mary Anne Barkhouse is a nationally acclaimed artist, born in Vancouver, British Columbia but with strong ties to both coasts: her mother is from the Nimpkish band, Kwakiutl First Nation of Alert Bay, BC and her father is of German and British descent from Nova Scotia. Barkhouse’s work examines issues surrounding empire, survival, history, and the environment through animal imagery. This work features three beavers sitting atop a piece of granite from the Canadian Shield, which is highly polished. The title grace is influenced by Italian sculptor Antonio Canova’s The Three Graces, depicting three goddesses representing Beauty, Mirth, and Good Cheer. While beavers might not be graceful animals on land, in water they are elegant and efficient. Beavers can reinvent their territory and the surrounding landscape through hard work. By placing these beavers on a piece of the Canadian Shield, Barkhouse places them as valuable players in the ecosystem of Canada’s boreal forest.",
+      "funFacts": [
+        "Beavers are survivors of the fashion industry in the 16th and 17th century. Their furs and hinds were in high demand for fashion, so much so that it depleted the beaver population dramatically. ",
+        "Oshawa was once the site of French fur-trading, and the Oshawa Creek (located behind the gallery), was an important carrying route for Indigenous peoples",
+        "Mary Anne Barkhouse’s work often features animals such as wolves, ravens, moose, beaver, and rabbits.",
+        "Barkhouse’s home in Haliburton Highland is surrounded by Canadian Shield wilderness",
+        "The Canadian Shield contains some of the oldest rocks on Earth."
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Group Portrait 1957",
+      "artist": "Douglas Coupland",
+      "year": "2011",
+      "material": "Aluminum - Black Polane Paint",
+      "audioFile": "./Coupland-summary_text_minus_artist_statement.mp3",
+      "description": "Internationally renowned artist and author, Douglas Coupland was approached in the spring of 2010  to produce a sculpture to animate the front of The Robert McLaughlin Gallery. His personal relationship with Arthur Erikson, the architect of the 1987 gallery expansion, and his ongoing interest in mid-century modernism, made the proposal particularly appealing to him.",
+      "ar": true,
+      "caption": "In 2010, the RMG commissioned artist Douglas Coupland to animate the front of the building with a sculpture. Coupland, a fan of mid-century modernism, was intrigued by Oshawa and the RMG’s connection to the Abstract Expressionist art collective, Painters Eleven. Coupland proposed a work that reflected the Gallery’s Painters Eleven focus and to transmit forward the influences of the group to future generations.",
+      "funFacts": [
+        "Douglas Coupland is an internationally renowned, Vancouver-based Canadian artist, author, and designer. ",
+        "Coupland was friends with the RMG’s building modernist architect, Arthur Erikson.",
+        "His first novel, the 1991 international bestseller Generation X: Tales for an Accelerated Culture, popularized the term ‘Generation X’.",
+        "He has published thirteen novels and has also been a regular contributor to the New York Times and Vice."
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Reverb",
+      "artist": "Noel Harding",
+      "year": "2015",
+      "material": "Stainless Steel - Light",
+      "audioFile": "./Harding-summary_text.mp3",
+      "description": "Noel Harding depicted an abstract steel stage-like item located in front of the tribute center in 2015.  He wanted to capture the crowd’s atmosphere and excitement in the arena.  When the arena is full it projects light onto the sculpture as if it is the energy of the crowd and arena.  It reminds you of a megaphone, stage, hockey net, or amphitheater.  The mirrored speech bubbles on the outside represent the community’s energy.",
+      "ar": false,
+      "caption": "To celebrate Oshawa’s participation in the 2015 Pan/Am Games, the RMG commissioned a sculpture to be placed adjacent to the sporting venue, now known as the Tribute Communities Centre. To prepare for his commission proposal, artist Noel Harding attended an Oshawa Generals hockey game. He was inspired by the energy of the crowd and proposed this community-focused work. The shape of the structure, at 19 feet high, is curved, which resembles a megaphone, an amphitheater, a stage, or even a hockey net. It’s covered in mirrored speech bubbles that reflects the enthusiasm of the crowd and brings that energy into a conversation outside of the arena. To further connect the structure outside to the action within the building, a microphone is positioned above centre ice inside that transmits a signal to lights at the base of the steel structure, transforming the sounds into coloured beams of light that are triggered every time the crowd cheers.",
+      "funFacts": [
+        "The word ‘reverb’ refers to an effect whereby the sound produced by an amplifier or an amplified musical instrument is made to reverberate. ",
+        "The mirrors make it a popular spot for graduation pictures or selfies.",
+        "With a career spanning over forty years, Noel Harding only started doing public art in the later part of his life. He is also known for video and kinetic installations."
+      ]
+    },
+    {
+      "id": "5",
+      "name": "River Tree/Bench",
+      "artist": "Reinhard Reitzenstein",
+      "year": "2002",
+      "material": "Bronze - Limestone",
+      "audioFile": "./reitzenstein-summary_text.mp3",
+      "description": "Reinhard Reitzenstein was born in Uelzen, Germany and immigrated to Canada with his family in 1956. Reitzenstein is considered an environmental sculptor. This 24-feet long bronze sculpture is of an ironwood tree lying on its side. In the early 1970s, Reitzenstein excavated the entire root system of an ancient ironwood tree on his family’s property in Ottawa. The roots he uncovered had grown around obstacles, boulders, and stones, similar to what this sculpture shows. This work explores the majestic ironwood’s ability to adapt to its environment. Much of Reitzenstein’s work centres on the tree as an archetype for the self and he uses it to reflect on the relationship humans share with the forests of the world.",
+      "ar": false,
+      "caption": "Reinhard Reitzenstein was born in Uelzen, Germany and immigrated to Canada with his family in 1956. Reitzenstein is considered an environmental sculptor. This 24-feet long bronze sculpture is of an ironwood tree lying on its side. In the early 1970s, Reitzenstein excavated the entire root system of an ancient ironwood tree on his family’s property in Ottawa. The roots he uncovered had grown around obstacles, boulders, and stones, similar to what this sculpture shows. This work explores the majestic ironwood’s ability to adapt to its environment. Much of Reitzenstein’s work centres on the tree as an archetype for the self and he uses it to reflect on the relationship humans share with the forests of the world.",
+      "funFacts": [
+        "Look closely and you will see a spine in the trunk of the tree. This speaks to our connection to nature and how it is the backbone to our existence.",
+        "Reinhard Reitzenstein called this work Tree Bench because he hoped people would sit and rest in its natural environment. "
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Upstart II",
+      "artist": "Clement Meadmore",
+      "year": "1968",
+      "material": "Aluminum - Black Polane Paint",
+      "audioFile": "./meadmore-summary_text.mp3",
+      "description": "Clement Meadmore is an internationally acclaimed artist known for his monumental outdoor sculptures that combine Abstract Expressionism and Minimalism. Despite its mass and weight, this sculpture gives an impression of lightness, and the bending form adds a dynamic element that reads as a heroic punctuation mark. Utilizing simple geometric forms of an elongated metal tube and semi-circular form, Upstart II exemplifies Meadmore’s description of his work as “transcended geometry.”",
+      "ar": false,
+      "caption": "Clement Meadmore is an internationally acclaimed artist known for his monumental outdoor sculptures that combine Abstract Expressionism and Minimalism. Despite its mass and weight, this sculpture gives an impression of lightness, and the bending form adds a dynamic element that reads as a heroic punctuation mark. Utilizing simple geometric forms of an elongated metal tube and semi-circular form, Upstart II exemplifies Meadmore’s description of his work as “transcended geometry.”",
+      "funFacts": [
+        "This sculpture is made of 6,800 pounds of aluminum and is 25.5 feet long.",
+        "This is the first major work by Clement Meadmore in a Canadian art collection.",
+        "There is no specific way to view it—no matter the angle there is a sense of movement that has been achieved by combining two geometric elements. "
+      ]
+    }
+  ]
 }

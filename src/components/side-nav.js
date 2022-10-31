@@ -68,7 +68,6 @@ class SideNav extends React.Component {
               {artData.artworks
                 .sort((a, b) => a.name.localeCompare(b.name))
                 .map((artwork) => (
-                  artwork.id == 5 ? null:(
                   <li
                     key={artwork.id}
                     data-id={artwork.id}
@@ -100,7 +99,6 @@ class SideNav extends React.Component {
                       )}
                     </a>
                   </li>
-                  )
 
                   //<li data-id={artwork.id} className="menu-item"><a href="#" className="menu-text" onClick={this.props.getArtwork}>{artwork.name}<br/><span>{artwork.artist}</span></a></li>
                 ))}
