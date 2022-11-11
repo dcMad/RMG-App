@@ -33,13 +33,11 @@ class PullMenu extends React.Component {
           </section>
           <Carousel id={this.props.artId} />
           <h1><em>{this.props.artTitle} </em></h1>
-          {this.props.artId != 1 ? (
-            <div>
+          <div>
               <h2 className="name-artist">-- {this.props.artistName} --</h2>
               <h2 className="artworkYear"> {this.props.artYear} </h2>
               <h2 className="artworkMaterial">{this.props.artMaterial}</h2>
-            </div>
-          ) : null}
+          </div>
           <div className="media-icons-container">
             {this.props.artId == 3 ? (
               <a href="https://staging.rileyline.ca/rmg-ar-sept/">
