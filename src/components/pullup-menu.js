@@ -32,7 +32,7 @@ class PullMenu extends React.Component {
             />
           </section>
           <Carousel id={this.props.artId} />
-          <h1>{this.props.artTitle}</h1>
+          <h1><em>{this.props.artTitle} </em></h1>
           {this.props.artId != 1 ? (
             <div>
               <h2 className="name-artist">-- {this.props.artistName} --</h2>
