@@ -40,7 +40,7 @@ class PullMenu extends React.Component {
           </div>
           <div className="media-icons-container">
             {this.props.artId == 3 ? (
-              <a href="https://staging.rileyline.ca/rmg-ar-sept/">
+              <a href="https://staging.rileyline.ca/rmg-ar-nov/">
                 <ARBtn
                   className="media-icon"
                   alt="Augmented Reality Experience Button"
