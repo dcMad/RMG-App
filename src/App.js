@@ -71,7 +71,7 @@ function App() {
         },
         id: 1,
         visited: false,
-        qr_url: "https://development.rmgpublicart.ca/Map/?artwork=crown",
+        qr_url: "https://rmgpublicart.ca/Map/?artwork=crown",
       },
       {
         type: "Feature",
@@ -91,7 +91,7 @@ function App() {
         },
         id: 2,
         visited: false,
-        qr_url: "https://development.rmgpublicart.ca/Map/?artwork=grace",
+        qr_url: "https://rmgpublicart.ca/Map/?artwork=grace",
       },
       {
         type: "Feature",
@@ -112,7 +112,7 @@ function App() {
         id: 3,
         visited: false,
         qr_url:
-          "https://development.rmgpublicart.ca/Map/?artwork=group-portrait-1957",
+          "https://rmgpublicart.ca/Map/?artwork=group-portrait-1957",
       },
       {
         type: "Feature",
@@ -132,7 +132,7 @@ function App() {
         },
         id: 4,
         visited: false,
-        qr_url: "https://development.rmgpublicart.ca/Map/?artwork=reverb",
+        qr_url: "https://rmgpublicart.ca/Map/?artwork=reverb",
       },
       {
         type: "Feature",
@@ -153,7 +153,7 @@ function App() {
         id: 5,
         visited: false,
         qr_url:
-          "https://development.rmgpublicart.ca/Map/?artwork=river-tree-bench",
+          "https://rmgpublicart.ca/Map/?artwork=river-tree-bench",
       },
       {
         type: "Feature",
@@ -173,7 +173,7 @@ function App() {
         },
         id: 6,
         visited: false,
-        qr_url: "https://development.rmgpublicart.ca/Map/?artwork=upstart-ii",
+        qr_url: "https://rmgpublicart.ca/Map/?artwork=upstart-ii",
       },
     ],
   };
@@ -422,7 +422,7 @@ function App() {
   });
 
   //homepath for the app
-  let homePath = "https://staging.jiahuacui.com/";
+  let homePath = "https://rmgpublicart.ca/";
 
   // open pull up menu
   function openPullUpMenu(qrCode) {
