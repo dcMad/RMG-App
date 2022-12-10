@@ -71,7 +71,8 @@ function App() {
         },
         id: 1,
         visited: false,
-        qr_url: "https://rmgpublicart.ca/Map/?artwork=crown",
+        // qr_url: "https://localhost:3000/?artwork=crown",
+        qr_url: "artwork=crown",
       },
       {
         type: "Feature",
@@ -91,7 +92,8 @@ function App() {
         },
         id: 2,
         visited: false,
-        qr_url: "https://rmgpublicart.ca/Map/?artwork=grace",
+        // qr_url: "https://localhost:3000/?artwork=grace",
+        qr_url: "artwork=grace",
       },
       {
         type: "Feature",
@@ -111,8 +113,8 @@ function App() {
         },
         id: 3,
         visited: false,
-        qr_url:
-          "https://rmgpublicart.ca/Map/?artwork=group-portrait-1957",
+        // qr_url: "https://localhost:3000/?artwork=group-portrait-1957",
+        qr_url: "artwork=group-portrait-1957",
       },
       {
         type: "Feature",
@@ -132,7 +134,8 @@ function App() {
         },
         id: 4,
         visited: false,
-        qr_url: "https://rmgpublicart.ca/Map/?artwork=reverb",
+        // qr_url: "https://localhost:3000/?artwork=reverb",
+        qr_url: "artwork=reverb",
       },
       {
         type: "Feature",
@@ -152,8 +155,8 @@ function App() {
         },
         id: 5,
         visited: false,
-        qr_url:
-          "https://rmgpublicart.ca/Map/?artwork=river-tree-bench",
+        // qr_url: "https://localhost:3000/?artwork=river-tree-bench",
+        qr_url: "artwork=river-tree-bench",
       },
       {
         type: "Feature",
@@ -173,7 +176,8 @@ function App() {
         },
         id: 6,
         visited: false,
-        qr_url: "https://rmgpublicart.ca/Map/?artwork=upstart-ii",
+        // qr_url: "https://localhost:3000/?artwork=upstart-ii",
+        qr_url: "artwork=upstart-ii",
       },
     ],
   };
@@ -351,7 +355,6 @@ function App() {
                 //set the waypoint to visited
                 setVisited((artworks_visited) =>{
                   artworks_visited.concat({ visited: true, id: feature.id })
-                  console.log(artworks_visited)
                 }
                 );
                 document.querySelector(".badgeMenuNotification").style.display =
@@ -422,12 +425,13 @@ function App() {
   });
 
   //homepath for the app
-  let homePath = "https://rmgpublicart.ca/";
+  let homePath = "https://rmgpublicart.ca";
+  // let homePath = "https://localhost:3000";
 
   // open pull up menu
   function openPullUpMenu(qrCode) {
     for (const feature of geojson.features) {
-      if (qrCode == feature.qr_url) {
+      if (qrCode.includes(feature.qr_url)) {
         //when map loads
         map.current.on("load", () => {
           //grab the marker that is tied to the qr code
@@ -649,7 +653,7 @@ function App() {
   window.onload = () => {
     //check for qr code url
     let chosenArtwork = window.location.href;
-    closePullUpMenu();
+    // closePullUpMenu();
     if (window.location.href != homePath) {
       //open menu corresponding to the qr code
       openPullUpMenu(chosenArtwork);
