@@ -183,7 +183,7 @@ function App() {
   };
 
   const mapContainer = useRef(null);
-  const map = useRef(null);
+  let map = useRef(null);
   const [lng, setLng] = useState(-78.866266);
   const [lat, setLat] = useState(43.89484);
   const [zoom, setZoom] = useState(17);
@@ -432,55 +432,57 @@ function App() {
   function openPullUpMenu(qrCode) {
     for (const feature of geojson.features) {
       if (qrCode.includes(feature.qr_url)) {
-        //when map loads
-        map.current.on("load", () => {
-          //grab the marker that is tied to the qr code
-          let qrMarker = document.querySelector(`.marker-${feature.id}`);
+        setTimeout(function(){
+          //when map loads
+          map.current.on("load", () => {
+            //grab the marker that is tied to the qr code
+            let qrMarker = document.querySelector(`.marker-${feature.id}`);
 
-          //fly to the waypoint that the QR code loads
-          map.current.flyTo({
-            center: [
-              feature.geometry.coordinates[0],
-              feature.geometry.coordinates[1],
-            ],
-            zoom: 19,
-            essential: true,
+            //fly to the waypoint that the QR code loads
+            map.current.flyTo({
+              center: [
+                feature.geometry.coordinates[0],
+                feature.geometry.coordinates[1],
+              ],
+              zoom: 19,
+              essential: true,
+            });
+
+            //add the marker claimed id to the marker
+            qrMarker.id = "marker-claimed";
+            //if the waypoint hasn't been visited
+            if (!feature.visited) {
+              //set the waypoint to visited
+              setVisited((artworks_visited) =>
+                artworks_visited.concat({ visited: true, id: feature.id })
+              );
+              document.querySelector(".badgeMenuNotification").style.display =
+                "unset"; //show the notification on the badge menu
+              feature.visited = true;
+            }
           });
 
-          //add the marker claimed id to the marker
-          qrMarker.id = "marker-claimed";
-          //if the waypoint hasn't been visited
-          if (!feature.visited) {
-            //set the waypoint to visited
-            setVisited((artworks_visited) =>
-              artworks_visited.concat({ visited: true, id: feature.id })
-            );
-            document.querySelector(".badgeMenuNotification").style.display =
-              "unset"; //show the notification on the badge menu
-            feature.visited = true;
-          }
-        });
-
-        //set data for the pull-up menu
-        setArtist(
-          (artwork_artist = feature.properties.artist),
-          setYear((artwork_year = feature.properties.year)),
-          setMaterial((artwork_material = feature.properties.material)),
-          setTitle(
-            (artwork_title = feature.properties.title),
-            setDescription(
-              (artwork_description = feature.properties.description),
-              setAudio(
-                (artwork_audio = feature.properties.audio),
-                setCaptions(
-                  (artwork_captions = feature.properties.caption),
-                  setId((artwork_id = feature.id),
-                  setFunFacts((artwork_funFacts = feature.properties.funFacts)))
+          //set data for the pull-up menu
+          setArtist(
+            (artwork_artist = feature.properties.artist),
+            setYear((artwork_year = feature.properties.year)),
+            setMaterial((artwork_material = feature.properties.material)),
+            setTitle(
+              (artwork_title = feature.properties.title),
+              setDescription(
+                (artwork_description = feature.properties.description),
+                setAudio(
+                  (artwork_audio = feature.properties.audio),
+                  setCaptions(
+                    (artwork_captions = feature.properties.caption),
+                    setId((artwork_id = feature.id),
+                    setFunFacts((artwork_funFacts = feature.properties.funFacts)))
+                  )
                 )
               )
             )
-          )
-        );
+          );
+        },50)
       }
     }
 
