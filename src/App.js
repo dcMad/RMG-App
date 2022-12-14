@@ -16,7 +16,7 @@ mapboxgl.accessToken =
   "pk.eyJ1IjoiY3RoZXJpYXVsdDk3IiwiYSI6ImNremgycWY2cjI1c2Eydmt1MHRjZDhmN24ifQ.R_TgJcYa-2HWW-Yz8ca2-g";
 
 function App() {
-  let appTesting = true; //! change to false to activate position distance checking for badges, change to true for testing/debugging
+  let appTesting = false; //! change to false to activate position distance checking for badges, change to true for testing/debugging
   let userLng;
   let userLat;
   let distanceFromWaypoint = 0.00014; //distance needed to be from waypoint to collect a badge (14 meters)
